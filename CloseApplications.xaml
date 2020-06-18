@@ -1,0 +1,178 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CloseApplications" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="613.333333333333,1331.33333333333" sap2010:WorkflowViewState.IdRef="CloseApplications_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="CloseApplications" sap:VirtualizedContainerService.HintSize="593.333333333333,1271.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="551.333333333333,1179.33333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Email'" sap:VirtualizedContainerService.HintSize="512.666666666667,941.333333333333" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="08d6b26c96d269e2f0ada56887228aef" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='ZohoInvoiceRef' title='*| Zoho Invoice' /&gt;">
+          <ui:BrowserScope.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478.666666666667,795.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436.666666666667,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Signing Out of Application&quot;]" />
+                <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'chrome.exe Email'" sap:VirtualizedContainerService.HintSize="436.666666666667,106" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:ClickImage.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:ClickImage.CursorPosition>
+                  <ui:ClickImage.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.5" Profile="Basic" TargetImageBase64="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" />
+                  </ui:ClickImage.Image>
+                  <ui:ClickImage.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickImage.Target>
+                </ui:ClickImage>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436.666666666667,276.666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Signout" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="3cfe8a990288883b3f2ba58f80e429ae" Selector="&lt;webctrl aaname='Sign Out' omit:parentid='ember1408' tag='A' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                </ui:CommentOut>
+                <ui:CloseApplication DisplayName="Close Application 'chrome.exe Zoho'" sap:VirtualizedContainerService.HintSize="436.666666666667,106" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
+                  <ui:CloseApplication.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" InformativeScreenshot="ab25472e0b068086a21422711ca4b480">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:CloseApplication.Target>
+                </ui:CloseApplication>
+              </Sequence>
+            </ActivityAction>
+          </ui:BrowserScope.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:BrowserScope>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="517.333333333333,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="376,248.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Killing Application&quot;]" />
+              <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>

@@ -1,0 +1,133 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="NavigateToInvoiceTab" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="622,938.666666666667" sap2010:WorkflowViewState.IdRef="NavigateToInvoiceTab_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="21">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="16">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="NavigateToInvoiceTab" sap:VirtualizedContainerService.HintSize="602,878.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser Zoho Website" sap:VirtualizedContainerService.HintSize="560,786.666666666667" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="416dbd76fa70491096de72eb513b67ef" Selector="&lt;html app='chrome.exe' title='*Zoho Invoice' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do - Inside Navigate TO Invoice Tab" sap:VirtualizedContainerService.HintSize="526,640.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="Flag_LeaveImage" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Invoice Tab" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="bb8f502c5e68d3376abbc6c0e36ebf78" Selector="&lt;webctrl tag='A' aaname='    Invoices ' innertext='    Invoices ' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:ImageFound DisplayName="Image Exists Leave Page" Found="[Flag_LeaveImage]" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+              <ui:ImageFound.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.5" Profile="Basic" TargetImageBase64="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" />
+              </ui:ImageFound.Image>
+              <ui:ImageFound.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="5000">
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:ImageFound.Target>
+            </ui:ImageFound>
+            <If Condition="[Flag_LeaveImage = True]" DisplayName="If Leave Page Window Exists" sap:VirtualizedContainerService.HintSize="484,256.666666666667" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Leave Page" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="fa06fe3682bfc8ae37fe796cdfd63453" Selector="&lt;webctrl aaname=' Leave this Page ' tag='BUTTON' innertext=' Leave this Page ' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+              </If.Then>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>
